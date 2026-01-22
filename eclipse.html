@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, minimum-scale=1" />
+  <meta name="description" content="Winkie Ng's Portfolio - Falling Eclipse
+  Featuring sketches, fabrication, industrial design, product design ">
+  <title>Winkie Ng's Portfolio</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+
+  <!-- Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <section class="navbar">
+    <h2><span class="heading-w">.</span></h2>
+    <nav>
+      <input type="checkbox" id="nav" class="hidden">
+      <label for="nav" class="nav-btn">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+      <div class="logo">
+        <!-- <a href="index.html">WN</a> -->
+        <a href="index.html"><img src="img/logo.png" alt="banner" ></a>
+      </div>
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="bio.html" class="nav-link">About</a></li>
+          <li><a href="index.html#work" class="nav-link">Work</a></li>
+          <li><a href="art.html" class="nav-link">Art Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section id="project">
+    <img src="img/back-to-top.png" alt="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+
+    <div class="title">
+      <img src="img/eclipse/eclipse-cover.png" alt="eclipse-cover">  
+      <!-- <img src="img/2121/2121-cover-mobile.png" alt="2121-cover-mobile" class="project-mobile">     -->
+      <br>
+    </div>
+
+    <div class="body">
+      <!-- <div class="project-web"> -->
+        <img src="img/eclipse/eclipse-intro.png" alt="eclipse-intro">
+        <br>
+        <img src="img/eclipse/eclipse-moodboard.png" alt="eclipse-moodboard">
+        <br>
+        <img src="img/eclipse/eclipse-process-title.png" alt="eclipse-process-title">
+        <br>
+        <img src="img/eclipse/eclipse-process-sketches.png" alt="eclipse-process-sketches">
+        <br>
+        <img src="img/eclipse/eclipse-process-dimension.png" alt="eclipse-process-dimension">
+        <br>
+        <img src="img/eclipse/eclipse-process-storyboard.png" alt="eclipse-process-storyboard">
+        <br>
+        <img src="img/eclipse/eclipse-process-material.png" alt="eclipse-process-material">
+        <br>
+        <img src="img/eclipse/eclipse-prototype-title.png" alt="eclipse-prototype-title">
+        <br>
+        <img src="img/eclipse/eclipse-prototype-process.png" alt="eclipse-prototype-process">
+        <br>
+        <img src="img/eclipse/eclipse-prototype-final.png" alt="eclipse-prototype-final">
+      <!-- </div> -->
+      <!-- <div class="project-mobile">
+
+      </div> -->
+    </div>
+  </section>
+  <footer class="footer-area">
+    <div class="main">
+      <div class="footer">
+        <img src="img/footer1.png" alt="footer" width="100%" div class="home-web">
+        <img src="img/footer1-mobile.png" alt="footer" width="100%" div class="home-mobile">
+        <!-- <h1><i>let's create together</i></h1> -->
+        <div class="single-footer">
+          <ul>
+            <li>
+              <p><a href="pdf/Ng_Winkie_Resume.pdf" target="_blank">Resume</a></p>
+            </li>
+            <li>
+              <p><a href="mailto:ng.winkie@yahoo.com">Email</a></p>
+            </li>
+            <li>
+              <p><a href="https://www.linkedin.com/in/winkie-ng/">Linkedin</a></p>
+            </li>
+          </ul>
+        </div>
+        <img src="img/footer2.png" alt="footer2" width="100%" div class="home-web">
+        <img src="img/footer2-mobile.png" alt="footer2" width="100%" div class="home-mobile">
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="scripts/style.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 800
+    });
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

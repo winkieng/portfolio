@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, minimum-scale=1" />
+  <meta name="description" content="Winkie Ng's Portfolio
+  Winkie is a graphic designer and illustrator based in Vancouver BC. She has worked ">
+  <meta property="og:image" content="img/logo.png"/>
+  <title>Winkie Ng's Portfolio</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/logo.png">
+
+  <!-- Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <section class="navbar">
+    <!-- <h3><span class="heading-w">.</span></h3> -->
+    <nav>
+      <input type="checkbox" id="nav" class="hidden">
+      <label for="nav" class="nav-btn">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+      <div class="logo">
+        <!-- <a href="index.html">WN</a> -->
+        <a href="index.html"><img src="img/logo2.png" alt="banner" class="home-web"></a>
+        <a href="index.html"><img src="img/logo.png" alt="banner" class="home-mobile"></a>
+      </div>
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="bio.html" class="nav-link">About</a></li>
+          <li><a href="index.html#work" class="nav-link">Work</a></li>
+          <li><a href="art.html" class="nav-link">Art Gallery</a></li>
+        </ul>
+        <!-- <hr> -->
+      </div>
+    </nav>
+  </section>
+
+  <section class="banner">
+    <img src="img/index/banner.png" alt="banner" class="home-web">
+    <img src="img/index/banner-mobile.png" alt="banner-mobile" class="home-mobile">
+  </section>
+
+  <section id="work">
+    <img src="img/back-to-top.png" alt="back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> 
+         All
+      </button>
+      <button class="btn" onclick="filterSelection('branding')"> 
+        Branding
+      </button>
+      <button class="btn" onclick="filterSelection('marketing')"> 
+        Marketing 
+      </button>
+      <button class="btn" onclick="filterSelection('illustration')"> 
+        Illustration 
+      </button>
+      <button class="btn" onclick="filterSelection('print')"> 
+        Print 
+      </button>
+    </div>
+    <br>
+    <div class="home-project">
+      <a href="coco.html"> 
+        <span class="filterDiv branding, marketing">
+          <img src="img/index/home5.png" alt="coco-thumb" div class="home-web">
+          <img src="img/index/home5-mobile.png" alt="coco-thumb-mobile" class="home-mobile">
+        </span>
+      </a>
+    </div>
+    <div class="home-project" class="hideme">
+      <a href="lfm.html"> 
+        <span class="filterDiv branding, marketing, print">
+          <img src="img/index/home4.png" alt="lfm-thumb" div class="home-web">
+          <img src="img/index/home4-mobile.png" alt="sune-thumb-mobile" class="home-mobile">
+        </span>
+      </a>
+    </div>
+    <div class="home-project">
+      <a href="sune.html">
+        <span class="filterDiv branding">
+          <img src="img/index/home3.png" alt="sune-thumb" div class="home-web">
+          <img src="img/index/home3-mobile.png" alt="sune-thumb-mobile" class="home-mobile">
+        </span>
+      </a>
+    </div>
+    <div class="home-project">
+      <a href="holland.html">
+        <span class="filterDiv marketing, print">
+          <img src="img/index/home2.png" alt="holland-thumb" div class="home-web">
+          <img src="img/index/home2-mobile.png" alt="holland-thumb-mobile" class="home-mobile">
+        </span>
+      </a>
+    </div>
+    <div class="home-project">
+      <a href="zen.html">
+        <span class="filterDiv illustration, print">
+          <img src="img/index/home1.png" alt="zen-thumb" div class="home-web">
+          <img src="img/index/home1-mobile.png" alt="zen-thumb-mobile" class="home-mobile">
+        </span>
+      </a>
+    </div>
+    <div class="home-project"> 
+      <span class="filterDiv marketing, print">
+        <a href="2121.html">
+          <img src="img/index/home6.png" alt="2121-thumb" div class="home-web">
+          <img src="img/index/home6-mobile.png" alt="2121-thumb-mobile" class="home-mobile">
+        </span>
+      </a>
+    </div>
+    <div class="home-project" id="art"> 
+      <span class="filterDiv illustration">
+        <a href="art.html">
+          <img src="img/index/art-gallery.png" alt="art-thumb" div class="home-web">
+          <img src="img/index/art-gallery-mobile.png" alt="art-gallery-thumb-mobile" class="home-mobile">
+        </span>
+      </a>
+    </div>    
+  </section>
+</body>
+<br>
+<footer class="footer">
+  <div class="footer-flex">
+    <div class="footer-left" >
+      <img src="img/footer-left.png" alt="footer-left" class="home-web">
+      <img src="img/footer-left-mobile.png" alt="footer-left-mobile" class="home-mobile">
+    </div>
+    <div class="footer-middle">
+      <img src="img/footer-middle.png" alt="footer-middle" >
+      <ul>
+        <li>
+          <p><a href="2121.html" class="footer-link">21_21 Design Sight</a></p>
+        </li>
+        <li>
+          <p><a href="coco.html" class="footer-link">Coco Fresh Tea & Juice</a></p>
+        </li>
+        <li>
+          <p><a href="lfm.html" class="footer-link">Langley Farm Market</a></p>
+        </li>
+        <li>
+          <p><a href="sune.html" class="footer-link">SUNÉ</a></p>
+        </li>
+        <li>
+          <p><a href="holland.html" class="footer-link">Holland Festival 2023</a></p>
+        </li>
+        <li>
+          <p><a href="zen.html" class="footer-link">Zen Maker Lab</a></p>
+        </li>
+        <li>
+          <p><a href="art.html" class="footer-link">Art Gallery</a></p>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="footer-right">
+      <img src="img/footer-right.png" alt="footer-right" >
+      <ul>
+        <li>
+          <p><a href="pdf/Ng_Winkie_Resume.pdf" target="_blank">Resume</a></p>
+        </li>
+        <li>
+          <p><a href="mailto:ng.winkie@yahoo.com">Email</a></p>
+        </li>
+        <li>
+          <p><a href="https://www.linkedin.com/in/winkie-ng/">Linkedin</a></p>
+        </li>
+        <li>
+          <p><a href="https://www.instagram.com/lazybuuu/">Instagram</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <img src="img/footer2.png" alt="footer2" class="home-web">
+    <img src="img/footer2-mobile.png" alt="footer2-mobile" class="home-mobile">
+  </div>
+</footer>
+
+  <script src="scripts/style.js"></script>
+
+  <script>
+  // for back to top
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  // for home filter
+  filterSelection("all")
+
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+  </script>
+
+  
+<!-- 
+</body> -->
+
+</html>
